@@ -7,9 +7,9 @@ var moongoose = require('./models/connectDB');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-
 var app = express();
 
+require('dotenv').config()
 
 app.locals.dateFormat = function(dates) {
   let date = new Date(dates);
